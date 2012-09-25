@@ -1,0 +1,26 @@
+<?xml version="1.0"?><api><query><pages><page pageid="18942" ns="0" title="Monty Python"><revisions><rev xml:space="preserve">{{Use dmy dates|date=May 2011}}
+{{Infobox comedian
+| name        = Monty Python
+| image       = Flyingcircus 2.jpg
+| imagesize   = 275px
+| caption     = The Python troupe in 1969&lt;br /&gt;
+Back row: [[Graham Chapman]], [[Eric Idle]], [[Terry Gilliam]]&lt;br /&gt;Front row: [[Terry Jones]], [[John Cleese]], [[Michael Palin]]
+| medium      = Television, film, theatre, &lt;br /&gt;[[Sound recording and reproduction|audio recordings]], books
+| nationality = British&lt;ref&gt;Gilliam was born American and obtained British citizenship in 1968. In protest at [[George W. Bush]], he renounced his American citizenship in January 2006 and is now only a British citizen.  {{citation | place = DE | url = http://www.tagesspiegel.de/kultur/;art772,2004101 | date = 10 February 2006 | title = Kopflos am Potsdamer Platz | publisher = Tagesspiegel | language = German | accessdate = 15 September 2007}}.&lt;/ref&gt;
+| active      = 1969–1983
+| genre       = [[Satire]], [[Surreal humour]], [[dark comedy]]
+| subject     =
+| influences  = [[The Goons]], [[Spike Milligan]], [[Peter Cook]]
+| influenced  = [[Douglas Adams]], [[Eddie Izzard]], [[George Carlin]], [[Vic and Bob]], [[Matt Stone]], [[Trey Parker]] &lt;!--Kindly refrain from adding any more without discussion on the talk page. The Pythons had some influence over virtually all future British comedy, so be sure that only the ones with the most immediate and direct Python influence are listed. --&gt;
+| notable_work= ''[[Monty Python's Flying Circus]]'' (1969–1974)&lt;br /&gt;''[[And Now for Something Completely Different]]'' (1971)&lt;br /&gt;''[[Monty Python and the Holy Grail]]'' (1974)&lt;br /&gt;''[[Monty Python's Life of Brian]]'' (1979)&lt;br /&gt;''[[Monty Python Live at the Hollywood Bowl]]'' (1982)&lt;br /&gt;''[[Monty Python's The Meaning of Life]]'' (1983)
+| Current_members= [[Graham Chapman]] &lt;br /&gt; [[John Cleese]] &lt;br /&gt; [[Terry Gilliam]] &lt;br /&gt;[[Eric Idle]] &lt;br /&gt;[[Terry Jones]] &lt;br /&gt;[[Michael Palin]]
+| website     =  [http://www.pythonline.com/ PythOnline]
+| footnotes   =
+}}
+
+'''Monty Python''' (sometimes known as '''The Pythons''')&lt;ref&gt;Wilmut (1980), p. 250.&lt;/ref&gt;&lt;ref&gt;''The Pythons'' by 'The Pythons', ISBN 0752852930.&lt;/ref&gt; was a British [[surreal comedy]] group who created their influential ''[[Monty Python's Flying Circus]]'', a British television comedy sketch show that first aired on the [[BBC]] on 5 October 1969. Forty-five episodes were made over four series. The Python phenomenon developed from the television series into something larger in scope and impact, spawning touring stage shows, films, numerous albums, several books and a stage musical as well as launching the members to individual stardom. The group's influence on comedy has been compared to 
+[[The Beatles]]' influence on music.&lt;ref&gt;{{cite news |author=Todd Leopold |title=How Monty Python changed the world |url=http://www.cnn.com/2003/SHOWBIZ/TV/12/10/monty.python/index.html |publisher=CNN |date= 11 December 2003 |accessdate=30 March 2007| quote= Python has been called &quot;the Beatles of comedy,&quot;}}&lt;/ref&gt;&lt;ref&gt;{{cite web|author=Mark Lewisohn|title=Monty Python's Flying Circus|work=The bbc.uk.co Guide to Comedy|url=http://www.bbc.co.uk/comedy/guide/articles/m/montypythonsflyi_1299002137.shtml|publisher=BBC |accessdate=31 March 2007 |quote= In essence, the Monty Python team are the comedy equivalent of the Beatles.}}&lt;/ref&gt;
+
+The television series, broadcast by the BBC from 1969 to 1974, was conceived, written and performed by members [[Graham Chapman]], [[John Cleese]], [[Terry Gilliam]], [[Eric Idle]], [[Terry Jones]], and [[Michael Palin]]. Loosely structured as a sketch show, but with an innovative [[Stream of consciousness writing|stream-of-consciousness]] approach (aided by Gilliam's animation), it pushed the boundaries of what was acceptable in style and content. A self-contained comedy team responsible for both writing and performing their work, they changed the way performers entertained audiences. The Pythons' creative control allowed them to experiment with form and content, discarding rules of television comedy. Their influence on British comedy has been apparent for years, while in North America it has coloured the work of cult performers from the early editions of ''[[Saturday Night Live]]'' through to more recent [[Surreal humour|absurdist]] trends in television comedy. &quot;[[wikt:Pythonesque|Pythonesque]]&quot; has entered the English lexicon as a result.
+
+In a 2005 UK poll to find ''The Comedian's Comedian'', three of the six Pythons members were voted by fellow comedians and comedy insiders to be among the top 50 greatest comedians ever: Cleese at #2, Idle at #21, and Palin at #30.&lt;ref&gt;{{cite news|url=http://news.bbc.co.uk/1/hi/entertainment/tv_and_radio/4141019.stm |title=Cook voted 'comedians' comedian' |publisher=BBC News  |date=2 January 2005 |accessdate=21 September 2008}}&lt;/ref&gt;</rev></revisions></page></pages></query></api>

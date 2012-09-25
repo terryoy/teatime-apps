@@ -1,0 +1,119 @@
+<project name="irc-edmund" default="dist" basedir=".">   
+    <property name="product" value="irc-edmund"/>   
+    <property name="version" value="0.1"/>
+	<property name="src.dir" value="${basedir}/src"/>
+	<property name="lib.dir" value="${basedir}/lib"/>
+	<property name="conf.dir" value="${basedir}/conf"/>
+    <property name="doc.dir" value="${basedir}/doc"/>
+	<property name="res.dir" value="${basedir}/resources"/>
+	<property name="dist.dir" value="${basedir}/dist"/>
+	<property name="script.dir" value="${basedir}/script"/>
+	<property name="dist.file" value="${dist.dir}/${product}-${version}.zip"/>
+	<property name="project.dist.archive" value="E:/ProjectSpace/PartnerProjects/SZDIY/IRCBot/distribution"/>
+	
+	<property name="packaging.dir" value="${basedir}/packaging"/>
+    <property name="packaging.src.dir" value="${packaging.dir}/src"/>
+	<property name="packaging.res.dir" value="${packaging.dir}/resources"/>
+	<property name="packaging.conf.dir" value="${packaging.dir}/conf"/>
+    <property name="packaging.build.dir" value="${packaging.dir}/build"/>
+    <property name="packaging.lib.dir" value="${packaging.dir}/lib"/>   
+    <property name="packaging.log.dir" value="${packaging.dir}/log"/>
+    <property name="packaging.jar.file" value="${product}.jar"/>
+	
+	<!-- for teatime-common -->
+	<property name="teatime-common.src.dir" value="${basedir}/../teatime-common/src"/>
+	
+  
+    <path id="classpath">   
+        <fileset dir="${packaging.lib.dir}">   
+            <include name="**/*.jar"/>   
+        </fileset>   
+    </path>   
+  
+    <target name="clean">   
+        <echo>clean build dir</echo>   
+        <delete dir="${packaging.src.dir}" quiet="true"/>   
+        <delete dir="${packaging.build.dir}" quiet="true"/>   
+        <delete file="${packaging.lib.dir}/${jar.file}" quiet="true"/>   
+    </target>   
+  
+    <target name="init" depends="clean">
+        <mkdir dir="${packaging.src.dir}"/>
+        <!--mkdir dir="${packaging.res.dir}/template"/-->
+        <mkdir dir="${packaging.conf.dir}"/>
+        <mkdir dir="${packaging.build.dir}"/>
+        <mkdir dir="${packaging.lib.dir}"/>
+        <mkdir dir="${packaging.log.dir}"/>
+    	
+    	<copy todir="${packaging.src.dir}">
+    		<fileset dir="${src.dir}"/>
+    	</copy>
+    	
+    	<!-- copy teatime-common -->
+    	<copy todir="${packaging.src.dir}">
+    		<fileset dir="${teatime-common.src.dir}"/>
+    	</copy>
+    	
+    	<copy todir="${packaging.res.dir}/edmund">
+    		<fileset dir="${res.dir}/edmund"/>
+    	</copy>
+    	
+    	<copy todir="${packaging.conf.dir}">
+    		<fileset dir="${conf.dir}"/>
+    	</copy>
+    	<copy todir="${packaging.lib.dir}">
+    		<fileset dir="${lib.dir}">
+    			<include name="*.jar" />
+    		</fileset>
+    	</copy>
+    	
+    	<fixcrlf srcdir="${script.dir}" includes="**/*.sh"   eol="lf"   eof="remove" /> 
+    </target>   
+
+    <target name="compile" depends="init">   
+        <echo>compile the source</echo>   
+        <javac srcdir="${packaging.src.dir}" destdir="${packaging.build.dir}">   
+            <include name="**/*.java"/>   
+            <classpath refid="classpath"/>   
+        </javac>   
+    </target>   
+  
+    <target name="jar" depends="compile">   
+        <jar destfile="${packaging.lib.dir}/${packaging.jar.file}">   
+            <fileset dir="${packaging.build.dir}">   
+                <include name="**/*.class"/>   
+            </fileset>   
+            <manifest>   
+                <!--attribute name="Main-Class" value="teatime.stockanalysis.client.gui.StockAnalysisMain"/>   
+                <attribute name="Class-Path" value="axis.jar commons-discovery-0.2.jar commons-logging.jar jaxrpc.jar saaj.jar wsdl4j-1.5.1.jar"/-->   
+            </manifest>   
+        </jar>   
+    </target>
+	
+    <target name="dist" depends="jar">   
+    	<copy todir="${packaging.lib.dir}">
+    		<fileset dir="${lib.dir}">
+    		</fileset>
+    	</copy>
+    	
+    	<mkdir dir="${dist.dir}"/>
+        <delete dir="${dist.file}" quiet="true"/>
+    	<zip destfile="${dist.file}" >
+    		<zipfileset dir="${script.dir}" prefix="${product}-${version}"/>
+    		<zipfileset dir="${doc.dir}" prefix="${product}-${version}/doc"/>
+    		<zipfileset dir="${packaging.res.dir}" prefix="${product}-${version}/resources"/>
+    		<zipfileset dir="${packaging.log.dir}" prefix="${product}-${version}/log"/>
+    		<zipfileset dir="${packaging.lib.dir}" prefix="${product}-${version}/lib"/>
+    		<zipfileset dir="${packaging.conf.dir}" prefix="${product}-${version}/conf"/>
+    		<!--zipfileset dir="${packaging.src.dir}" includes="log4j.properties" prefix="${product}-${version}/conf"/-->
+    	</zip>
+    	
+    	<copy file="${dist.file}" todir="${project.dist.archive}">
+    	</copy>
+    </target>
+	
+    <target name="run" depends="jar">   
+        <java jar="${packaging.lib.dir}/${packaging.jar.file}" fork="yes">   
+        </java>   
+    </target>
+</project>  

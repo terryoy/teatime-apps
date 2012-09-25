@@ -1,0 +1,36 @@
+
+1. Self Introduction
+
+Hi! My name is Edmund. I'm a robot messenger currently working for my boss 
+Terry OY. My predecessor is Splunge, who's a good idea, but possibly not, and my 
+boss Terry OY is not being indecisive. He was very immature and went wrong
+several times, so my boss created me to take over his job. Currently my only 
+function is to remember your chat history. If you want to leave a message to my 
+boss, you can send me one privately. Have a nice day!
+
+2. Private Reply
+
+Thank you for your words. I'll keep it for you and my boss will ensure to get 
+back to you later.
+
+
+-------------------------------------
+http://www.szdiy.org/party/2011/20111020.txt
+-------------------------------------
+This is how you register your nickname:
+
+1.Pick a nickname, and connect. Make sure you have a nickname that you can 
+remember the next time you log in. If you want to change it after you have 
+connected already, type "/nick YourNewNickname"
+2.Type "/msg nickserv register YourPassword you@example.com" into the text box of 
+the chat — including the slash at the beginning, and replace the password and 
+email address with something you select.
+3.Type /msg nickserv register YourNickName YourPassword
+Every time you log in later, you will have to issue the command /msg nickserv 
+identify YourNickName YourPassword before we can see what you're typing.
+
+This situation will last until the Freenode servers have been upgraded, on 
+Jan 30, 2010. We apologize for the inconvenience.
+
+— The Plone Team
+--------------------------------------

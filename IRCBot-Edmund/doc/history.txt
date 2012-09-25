@@ -1,0 +1,8 @@
+--under 0.1 construction--
+
+2011.12.11
+1.fix disconnect problem, added auto reconnect
+2.add stop daemon script
+
+2011.12.06
+1.initiallly start edmund on #szdiy
