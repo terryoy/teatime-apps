@@ -50,6 +50,7 @@ public class IRCEdmund extends AbstractIRCRobot implements IRCRobot {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		ApplicationConfig.loadConfig();
 		IRCEdmund edmund = new IRCEdmund();
 		edmund.setVerbose(
 				ApplicationConfig.getBooleanProp(VERBOSE_KEY));
@@ -57,6 +58,7 @@ public class IRCEdmund extends AbstractIRCRobot implements IRCRobot {
 		// load nick name and pasword
 		String nickName = ApplicationConfig.getStringProp(REG_NICK_KEY);
 		edmund.setName(nickName);
+		
 		
 		// connect to server
 		try {

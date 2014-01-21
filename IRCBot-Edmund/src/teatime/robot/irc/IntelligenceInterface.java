@@ -2,6 +2,13 @@ package teatime.robot.irc;
 
 public interface IntelligenceInterface {
 	
+	
+	/**
+	 * Get the bot's current nickname in public channel.
+	 *
+	 */
+	public String getNickName();
+	
 	/**
 	 * Reaction to people's words in public channel.
 	 * 

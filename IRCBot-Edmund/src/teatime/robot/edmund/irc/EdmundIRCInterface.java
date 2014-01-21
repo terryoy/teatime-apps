@@ -15,6 +15,12 @@ public class EdmundIRCInterface implements IntelligenceInterface {
 		this.iEdmund = new IntelligenceEdmund(this);
 	}
 
+	@Override
+	public String getNickName() {
+		// TODO Auto-generated method stub
+		return this.edmund.getNick();
+	}
+	
 	public void onPrivateTalk(String people, String message) {
 		
 		// if it's an exit command,
@@ -48,4 +54,5 @@ public class EdmundIRCInterface implements IntelligenceInterface {
 		// TODO Auto-generated method stub
 		edmund.sendBotMsg(channel, people, message);
 	}
+
 }

@@ -7,6 +7,7 @@ import teatime.robot.edmund.iengine.IntelligenceEdmund;
 public class SZDIYFun extends AbstractChatModule implements ChatModule {
 	
 	private SZDIYParty party = new SZDIYParty();
+	private SZDIYRoll roll = new SZDIYRoll();
 
 	public SZDIYFun(IntelligenceEdmund brain) {
 		super(brain);
@@ -19,7 +20,16 @@ public class SZDIYFun extends AbstractChatModule implements ChatModule {
 
 	@Override
 	public boolean replyMessage(String channel, String people, String message) {
-
+		
+		if (message.startsWith(this.getEdmund().getChatInterface().getNickName()) && message.toLowerCase().contains("roll")) {
+			
+			String reply = this.roll.rollLine(message);
+			if (reply != null) {
+				this.getEdmund().getChatInterface().sendMessage(channel, people, reply);
+				return true;
+			}
+		}
+		
 		if(message.contains(getEdmund().getMyName()) || IntelligenceEdmund.CHANNEL_PRIVATE.equals(channel)) {
 			String msgLowerCase = message.toLowerCase();
 			
@@ -33,6 +43,7 @@ public class SZDIYFun extends AbstractChatModule implements ChatModule {
 				return true;
 			}
 		}
+		
 		
 		return false;
 	}
