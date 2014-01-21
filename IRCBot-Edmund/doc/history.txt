@@ -1,5 +1,9 @@
 --under 0.1 construction--
 
+2014.1.21
+1.add Roll dice for SZDIY
+2.Fix a logger configuration problem
+
 2011.12.11
 1.fix disconnect problem, added auto reconnect
 2.add stop daemon script

@@ -1,6 +1,6 @@
 <project name="irc-edmund" default="dist" basedir=".">   
     <property name="product" value="irc-edmund"/>   
-    <property name="version" value="0.1"/>
+    <property name="version" value="0.1.1"/>
 	<property name="src.dir" value="${basedir}/src"/>
 	<property name="lib.dir" value="${basedir}/lib"/>
 	<property name="conf.dir" value="${basedir}/conf"/>
@@ -9,7 +9,7 @@
 	<property name="dist.dir" value="${basedir}/dist"/>
 	<property name="script.dir" value="${basedir}/script"/>
 	<property name="dist.file" value="${dist.dir}/${product}-${version}.zip"/>
-	<property name="project.dist.archive" value="E:/ProjectSpace/PartnerProjects/SZDIY/IRCBot/distribution"/>
+	<!--property name="project.dist.archive" value="E:/ProjectSpace/PartnerProjects/SZDIY/IRCBot/distribution"/-->
 	
 	<property name="packaging.dir" value="${basedir}/packaging"/>
     <property name="packaging.src.dir" value="${packaging.dir}/src"/>
@@ -108,8 +108,8 @@
     		<!--zipfileset dir="${packaging.src.dir}" includes="log4j.properties" prefix="${product}-${version}/conf"/-->
     	</zip>
     	
-    	<copy file="${dist.file}" todir="${project.dist.archive}">
-    	</copy>
+    	<!--copy file="${dist.file}" todir="${project.dist.archive}">
+    	</copy-->
     </target>
 	
     <target name="run" depends="jar">   
