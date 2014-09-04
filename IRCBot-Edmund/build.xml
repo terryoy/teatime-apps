@@ -1,6 +1,6 @@
 <project name="irc-edmund" default="dist" basedir=".">   
     <property name="product" value="irc-edmund"/>   
-    <property name="version" value="0.1.1"/>
+    <property name="version" value="0.1.2"/>
 	<property name="src.dir" value="${basedir}/src"/>
 	<property name="lib.dir" value="${basedir}/lib"/>
 	<property name="conf.dir" value="${basedir}/conf"/>

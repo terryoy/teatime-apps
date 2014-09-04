@@ -131,6 +131,8 @@ public class IRCEdmund extends AbstractIRCRobot implements IRCRobot {
 			
 			while (!isConnected()) {
 			    try {
+			    	long time = ApplicationConfig.getLongProp(CONNECTION_RETRY_TIME) * 1000;
+			    	Thread.sleep(time); // add time before reconnect
 			        reconnect();
 			        joinChannels(
 			        		ApplicationConfig.getStringProp(CHANNELS_KEY));

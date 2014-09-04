@@ -12,7 +12,8 @@ public abstract class AbstractIRCRobot extends PircBot implements IRCRobot {
 
 	private ChatLog chatLog;
 	
-	private static final String MSG_SIZE_LIMIT_KEY = "ircbot.base.msgsize_limit";
+	protected static final String MSG_SIZE_LIMIT_KEY = "ircbot.base.msgsize_limit";
+	protected static final String CONNECTION_RETRY_TIME = "ircbot.base.connection_retry_time";
 	
 	/**
 	 * Use a override send message to log reply message too.
