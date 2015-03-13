@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project memo-basic">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="F:/memo/teatime-memo.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Built-By" value="${user.name}"/>
+                <attribute name="Main-Class" value="com.teatime.memo.console.MemoConsole"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="E:/Projects/teatime/memo/workspace/memo-basic/bin"/>
+            <!--
+            <zipfileset excludes="META-INF/*.SF" src="E:/Developer/eclipse/eclipse-jee-ganymede-SR2-win32/plugins/org.junit4_4.3.1/junit.jar"/>
+            -->
+        </jar>
+    </target>
+</project>
